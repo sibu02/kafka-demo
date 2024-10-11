@@ -50,7 +50,7 @@ This will read all messages from the beginning of the topic.</br></br>
 bin/windows/kafka-topics.bat --delete --topic employee-events --bootstrap-server localhost:9092</br></br>
 
 # Step 3: Spring Boot Application Setup</br>
-
+</br>
 # 3.1 Clone the Repository</br>
 git clone https://github.com/your-username/kafka-demo.git</br></br>
 
@@ -60,8 +60,9 @@ In the src/main/resources/application.properties file, configure Kafka and MySQL
 # Kafka Configuration</br>
 spring.kafka.bootstrap-servers=localhost:9092</br></br>
 
-# Kafka Commands Cheat Sheet</br></br>
+# Kafka Commands Cheat Sheet</br>
 
+</br>
 Start Zookeeper:</br>
 bin/windows/zookeeper-server-start.bat config/zookeeper.properties</br></br>
 
@@ -73,10 +74,10 @@ bin/windows/kafka-topics.bat --create --topic employee-events --bootstrap-server
 List Topics:</br>
 
 bin/windows/kafka-topics.bat --list --bootstrap-server localhost:9092</br></br>
-Send a Message:</br></br>
 
-bin/windows/kafka-console-producer.bat --topic employee-events --bootstrap-server localhost:9092
-Consume Messages:
+Send a Message:</br>
+bin/windows/kafka-console-producer.bat --topic employee-events --bootstrap-server localhost:9092</br></br>
 
-bin/windows/kafka-console-consumer.bat --topic employee-events --from-beginning --bootstrap-server localhost:9092
+Consume Messages:</br>
+bin/windows/kafka-console-consumer.bat --topic employee-events --from-beginning --bootstrap-server localhost:9092</br></br>
 
