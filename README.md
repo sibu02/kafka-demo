@@ -1,5 +1,6 @@
-#Kafka Demo Project
-Project Overview
+# Kafka Demo Project
+
+# Project Overview
 This project demonstrates the integration of Apache Kafka with a Spring Boot microservice. It includes a basic setup where messages are produced and consumed using Kafka.
 
 Prerequisites
@@ -28,7 +29,7 @@ bin/windows/zookeeper-server-start.bat config/zookeeper.properties
 1.3 Start Kafka Server
 Once Zookeeper is running, start the Kafka server:
 
-cd /path/to/kafka
+cd /path/to/kafka </br>
 bin/windows/kafka-server-start.bat config/server.properties
 
 Step 2: Kafka Topics and Commands
