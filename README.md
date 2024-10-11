@@ -30,7 +30,7 @@ Once Zookeeper is running, start the Kafka server:</br>
 cd /path/to/kafka </br>
 bin/windows/kafka-server-start.bat config/server.properties</br></br>
 
-# Step 2: Kafka Topics and Commands</br></br>
+# Step 2: Kafka Topics and Commands</br>
 
 # 2.1 Create a Kafka Topic</br>
 bin/windows/kafka-topics.bat --create --topic employee-events --bootstrap-server localhost:9092 </br></br>
@@ -46,10 +46,10 @@ Type a message and hit Enter to send it.</br></br>
 bin/windows/kafka-console-consumer.bat --topic employee-events --from-beginning --bootstrap-server localhost:9092</br>
 This will read all messages from the beginning of the topic.</br></br>
 
-# 2.5 Delete a Kafka Topic</br></br>
+# 2.5 Delete a Kafka Topic</br>
 bin/windows/kafka-topics.bat --delete --topic employee-events --bootstrap-server localhost:9092</br></br>
 
-# Step 3: Spring Boot Application Setup</br></br>
+# Step 3: Spring Boot Application Setup</br>
 
 # 3.1 Clone the Repository</br>
 git clone https://github.com/your-username/kafka-demo.git</br></br>
